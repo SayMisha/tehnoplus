@@ -11,51 +11,70 @@
 </head>
 
 <body>
-	<section class="top">
-		<div class="wrap wrap_top">
-			<img src="img/logo.svg" alt="Логотип" class="top__logo">
-			<span class="logo__line"></span>
-			<img src="img/small-logo.png" alt="Маленький логотип" class="top__img">
-
-			<div class="top__nomber">
-				<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
-				<p class="top__nomber--city">г. Малоярославец</p>
+		<div class="wrapper__top">
+				<section class="top">
+					<div class="wrap wrap_top">
+						<img src="img/logo.svg" alt="Логотип" class="top__logo">
+						<span class="logo__line"></span>
+						<img src="img/small-logo.png" alt="Маленький логотип" class="top__img">
+		
+						<div class="top__nomber top__nomber--desktop">
+							<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
+							<p class="top__nomber--city">г. Малоярославец</p>
+						</div>
+		
+						<button class="top__search top__search--desktop"></button>
+					</div>
+				</section>
+		
+				<section class="menu">
+					<div class="wrap">
+						<div class="menu_button">
+							<input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+							<label for="checkbox1">
+								<div class="hamburger hamburger1">
+									<span class="bar bar1"></span>
+									<span class="bar bar2"></span>
+									<span class="bar bar3"></span>
+									<span class="bar bar4"></span>
+								</div>
+							</label>
+						</div>
+						<img src="img/decor.svg" alt="decor" class="menu__img">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="index.html">Главная</a>
+							</li>
+							<li class="menu__item menu__item--products--off menu__item--product">
+								<a href="products.html">Продукция</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">Сотрудничество</a>
+							</li>
+							<li class="menu__item menu__item--active">
+								<a href="company.html">О компании</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+		
+						<div class="menu__language">
+							<button class="menu__language--button">Рус</button>
+							<ul class="language__list">
+								<li class="language__item"><a href="#">Рус</a></li>
+								<li class="language__item"><a href="#">Eng</a></li>
+							</ul>
+						</div>
+						<div class="top__nomber top__nomber--mobile">
+								<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
+								<p class="top__nomber--city">г. Малоярославец</p>
+							</div>
+							<button class="top__search top__search--mobile"></button>
+					</div>
+				</section>
 			</div>
-
-			<button class="top__search"></button>
-		</div>
-	</section>
-
-	<section class="menu">
-		<div class="wrap">
-			<img src="img/decor.svg" alt="decor">
-			<ul class="menu__list">
-				<li class="menu__item">
-					<a href="#">Главная</a>
-				</li>
-				<li class="menu__item menu__item--products--off menu__item--product">
-					<a href="products.html">Продукция</a>
-				</li>
-				<li class="menu__item">
-					<a href="#">Сотрудничество</a>
-				</li>
-				<li class="menu__item menu__item--active">
-					<a href="#">О компании</a>
-				</li>
-				<li class="menu__item">
-					<a href="contacts.html">Контакты</a>
-				</li>
-			</ul>
-
-			<div class="menu__language">
-				<button class="menu__language--button">Рус</button>
-				<ul class="language__list">
-					<li class="language__item"><a href="#">Рус</a></li>
-					<li class="language__item"><a href="#">Eng</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+		
 
 	<section class="broadcrumbs">
 		<div class="wrap">
@@ -157,13 +176,13 @@
 								<img src="img/map_slider_img1.jpg" alt="">
 							</div>
 						</div>
-						<img src="img/map_slider_shadow.png" alt="" class="map_slider_shadow">
 					</div>
 
 					<div class="map__slider__buttons">
 						<div class="map__slider__buttons--left"></div>
 						<div class="map__slider__buttons--right"></div>
 					</div>
+					<img src="img/map_slider_shadow.png" alt="" class="map_slider_shadow">
 				</div>
 			</div>
 		</div>

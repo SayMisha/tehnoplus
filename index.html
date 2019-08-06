@@ -11,326 +11,361 @@
 </head>
 
 <body>
-	<section class="top">
-		<div class="wrap wrap_top">
-			<img src="img/logo.svg" alt="Логотип" class="top__logo">
-			<span class="logo__line"></span>
-			<img src="img/small-logo.png" alt="Маленький логотип" class="top__img">
+	<div class="wrapper__top">
+		<section class="top">
+			<div class="wrap wrap_top">
+				<img src="img/logo.svg" alt="Логотип" class="top__logo">
+				<span class="logo__line"></span>
+				<img src="img/small-logo.png" alt="Маленький логотип" class="top__img">
 
-			<div class="top__nomber">
-				<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
-				<p class="top__nomber--city">г. Малоярославец</p>
+				<div class="top__nomber top__nomber--desktop">
+					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
+					<p class="top__nomber--city">г. Малоярославец</p>
+				</div>
+				<div class="search__block">
+					<input id="search" type="text" placeholder="Поиск">
+					<button class="top__search top__search--desktop"></button>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu">
+			<div class="wrap">
+				<div class="menu_button">
+					<input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+					<label for="checkbox1">
+						<div class="hamburger hamburger1">
+							<span class="bar bar1"></span>
+							<span class="bar bar2"></span>
+							<span class="bar bar3"></span>
+							<span class="bar bar4"></span>
+						</div>
+					</label>
+				</div>
+				<img src="img/decor.svg" alt="decor" class="menu__img">
+				<ul class="menu__list">
+					<li class="menu__item menu__item--active">
+						<a href="index.html">Главная</a>
+					</li>
+					<li class="menu__item menu__item--products--off menu__item--product">
+						<a href="products.html">Продукция</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Сотрудничество</a>
+					</li>
+					<li class="menu__item">
+						<a href="company.html">О компании</a>
+					</li>
+					<li class="menu__item">
+						<a href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+
+				<div class="menu__language">
+					<button class="menu__language--button">Рус</button>
+					<ul class="language__list">
+						<li class="language__item"><a href="#">Рус</a></li>
+						<li class="language__item"><a href="#">Eng</a></li>
+					</ul>
+				</div>
+				<div class="top__nomber top__nomber--mobile">
+					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
+					<p class="top__nomber--city">г. Малоярославец</p>
+				</div>
+				<input id="search-mobile" type="text" placeholder="Поиск">
+				<button class="top__search top__search--mobile"></button>
+			</div>
+		</section>
+	</div>
+
+		<section class="slider__top">
+			<div class="slider__top--button--left"></div>
+			<div class="slider__top--wrapper">
+				<div class="slider__top--content">
+
+					<div class="slider__top--item">
+						<img class="slider__top--img" src="img/slider_img.jpg" alt="slider image">
+						<div class="bg_filter" style="background-image: url('img/bg_filter.png');"></div>
+						<h2 class="slider__top--title">Заголовок в несколько строчек, что-то очень длинно написанное
+						</h2>
+						<div class="slider__top--button button">Смотреть в каталоге</div>
+					</div>
+
+					
+
+					<div class="slider__top--item">
+						<img class="slider__top--img" src="img/slider_img.jpg" alt="slider image">
+						<div class="bg_filter" style="background-image: url('img/bg_filter.png');"></div>
+						<h2 class="slider__top--title">Заголовок в несколько строчек, что-то очень длинно написанное
+						</h2>
+						<div class="slider__top--button button">Смотреть в каталоге</div>
+					</div>
+
+					<div class="slider__top--item">
+						<img class="slider__top--img" src="img/slider_img.jpg" alt="slider image">
+						<div class="bg_filter" style="background-image: url('img/bg_filter.png');"></div>
+						<h2 class="slider__top--title">Заголовок в несколько строчек, что-то очень длинно написанное
+						</h2>
+						<div class="slider__top--button button">Смотреть в каталоге</div>
+					</div>
+
+					<div class="slider__top--item">
+						<img class="slider__top--img" src="img/slider_img.jpg" alt="slider image">
+						<div class="bg_filter" style="background-image: url('img/bg_filter.png');"></div>
+						<h2 class="slider__top--title">Заголовок в несколько строчек, что-то очень длинно написанное
+						</h2>
+						<a href="#" class="slider__top--button button">Смотреть в каталоге</a>
+					</div>
+				</div>
+			</div>
+			<div class="slider__top--button--right"></div>
+
+			<div class="button__dots">
+				<!-- <div class="button__dot button__active"></div>
+				<div class="button__dot"></div>
+				<div class="button__dot"></div>
+				<div class="button__dot"></div> -->
+			</div>
+		</section>
+
+		<section class="short__info">
+			<div class="wrap">
+				<div class="short__text-block">
+					<h3 class="short__title">Коротко о <span class="short__h">Техно</span><span
+							class="short__green">Плюс</span></h3>
+					<p class="short__text">Крупнейший производитель тарного картона и один из лидеров по производству
+						целлюлозы в России.</p>
+					<p class="short__text">Осуществляем масштабную программу технического перевооружения, нацеленную на
+						повышение объема выпуска продукции, улучшение ее качества и снижение воздействия на окружающую
+						среду.</p>
+
+					<a href="#" class="social__button button short__button">Узнать больше</a>
+				</div>
+
+				<div class="short__img">
+					<div class="short__img--big" style="background-image: url('img/short_img1.jpg')" ;>
+						<img class="short__img--big--uzor" src="img/short_uzor.png" alt="">
+					</div>
+
+					<img src="img/short_cvetok.png" alt="" class="short__img--cvetok">
+				</div>
 			</div>
 
-			<button class="top__search"></button>
-		</div>
-	</section>
+			<div class="line__bottom"></div>
+		</section>
 
-	<section class="menu">
-		<div class="wrap">
-			<img src="img/decor.svg" alt="decor">
-			<ul class="menu__list">
-				<li class="menu__item menu__item--active">
-					<a href="#">Главная</a>
-				</li>
-				<li class="menu__item menu__item--products--off menu__item--product">
-					<a href="products.html">Продукция</a>
-				</li>
-				<li class="menu__item">
-					<a href="#">Сотрудничество</a>
-				</li>
-				<li class="menu__item">
-					<a href="company.html">О компании</a>
-				</li>
-				<li class="menu__item">
-					<a href="contacts.html">Контакты</a>
-				</li>
-			</ul>
+		<section class="productions">
+			<div class="wrap">
+				<h2 class="productions__title">Наша продукция</h2>
 
-			<div class="menu__language">
-				<button class="menu__language--button">Рус</button>
-				<ul class="language__list">
-					<li class="language__item"><a href="#">Рус</a></li>
-					<li class="language__item"><a href="#">Eng</a></li>
+
+				<div class="productions__slider--line">
+					<div class="productions__slider">
+						<div class="productions__slider--content">
+							<div class="productions__slider--item-wrapper">
+								<div class="productions__slider--item"
+									style="background-image: url('img/productions_img1.jpg');">
+									<img class="slider__shadow" src="img/slider_shadow.png" alt="">
+
+									<h3 class="productions__slider--title">Пиломатериалы</h3>
+									<p class="productions__slider--text">Производство пиломатериалов различной
+										комплактации
+									</p>
+
+									<div class="productions__slider--arrow"></div>
+								</div>
+								<div class="productions__slider--item"
+									style="background-image: url('img/productions_img2.jpg');">
+									<img class="slider__shadow" src="img/slider_shadow.png" alt="">
+
+									<h3 class="productions__slider--title">Уголь</h3>
+									<p class="productions__slider--text">Производство угля</p>
+
+									<div class="productions__slider--arrow"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="productions__dots">
+					<div class="productions__dots--left"></div>
+					<div class="productions__dot productions__dot1"></div>
+					<div class="productions__dot productions__dot2"></div>
+					<div class="productions__dot productions__dot3"></div>
+					<div class="productions__dot productions__dot4"></div>
+					<div class="productions__dots--right"></div>
+				</div>
+			</div>
+			<div class="line__bottom"></div>
+		</section>
+
+		<section class="advantages">
+			<div class="wrap">
+				<ul class="advantages__list">
+					<li class="advantages__item">
+						<div class="advantages__item--img advantages__item--img1"
+							style="background-image: url(img/advantages/img1.png);"></div>
+
+						<h4 class="advantages__item--title">Бережное отношение к ресурсам</h4>
+						<p class="advantages__text">Срубив старое дерево - Мы высаживаем росток молодого дерева</p>
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__item--img advantages__item--img2"
+							style="background-image: url(img/advantages/img2.png);"></div>
+
+						<h4 class="advantages__item--title">Безотходное производство</h4>
+						<p class="advantages__text">Мы минимизировали отходы от производства, применяя их повторно</p>
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__item--img advantages__item--img3"
+							style="background-image: url(img/advantages/img3.png);"></div>
+
+						<h4 class="advantages__item--title">Отдалённое производство</h4>
+						<p class="advantages__text">Наши заводы и фабрики сильно отдалены от населенных пунктов</p>
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__item--img advantages__item--img4"
+							style="background-image: url(img/advantages/img4.png);"></div>
+
+						<h4 class="advantages__item--title">Производство гумуса и удобрений</h4>
+						<p class="advantages__text">Из вторичных отходов Мы производим гумус для удобрения почвы</p>
+					</li>
 				</ul>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="slider__top">
-		<div class="slider__top--button--left"></div>
-		<div class="slider__top--wrapper">
-			<div class="slider__top--content">
-
-				<div class="slider__top--item">
-					<img class="slider__top--img" src="img/slider_img.jpg" alt="slider image">
-					<div class="bg_filter" style="background-image: url('img/bg_filter.png');"></div>
-					<h2 class="slider__top--title">Заголовок в несколько строчек, что-то очень длинно написанное </h2>
-					<div class="slider__top--button button">Смотреть в каталоге</div>
+		<section class="map" style="background-image: url('img/map_bg.jpg');">
+			<div class="wrap">
+				<div class="map_img">
+					<img src="img/map_img.png" alt="">
 				</div>
 
-				<div class="slider__top--item">
-					<img class="slider__top--img" src="img/slider_img.jpg" alt="slider image">
-					<div class="bg_filter" style="background-image: url('img/bg_filter.png');"></div>
-					<h2 class="slider__top--title">Заголовок в несколько строчек, что-то очень длинно написанное </h2>
-					<div class="slider__top--button button">Смотреть в каталоге</div>
-				</div>
+				<div class="map_info">
+					<h2 class="map_info--title">Карта угодий</h2>
 
-				<div class="slider__top--item">
-					<img class="slider__top--img" src="img/slider_img.jpg" alt="slider image">
-					<div class="bg_filter" style="background-image: url('img/bg_filter.png');"></div>
-					<h2 class="slider__top--title">Заголовок в несколько строчек, что-то очень длинно написанное </h2>
-					<div class="slider__top--button button">Смотреть в каталоге</div>
-				</div>
+					<p class="map_info--text">Список наименований областей, представленный через запятую, в данном
+						случае,
+						это семь выделенных, булавкой областей на карте</p>
 
-				<div class="slider__top--item">
-					<img class="slider__top--img" src="img/slider_img.jpg" alt="slider image">
-					<div class="bg_filter" style="background-image: url('img/bg_filter.png');"></div>
-					<h2 class="slider__top--title">Заголовок в несколько строчек, что-то очень длинно написанное </h2>
-					<a href="#" class="slider__top--button button">Смотреть в каталоге</a>
+
+					<div class="map__slider">
+						<div class="map__slider--content-wrapper">
+							<div class="map__slider--content">
+								<div class="map__slider--item">
+									<img src="img/map_slider_img1.jpg" alt="">
+								</div>
+								<div class="map__slider--item">
+									<img src="img/map_slider_img2.jpg" alt="">
+								</div>
+								<div class="map__slider--item">
+									<img src="img/map_slider_img1.jpg" alt="">
+								</div>
+							</div>
+							<img src="img/map_slider_shadow.png" alt="" class="map_slider_shadow">
+						</div>
+
+						<div class="map__slider__buttons">
+							<div class="map__slider__buttons--left"></div>
+							<div class="map__slider__buttons--right"></div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="slider__top--button--right"></div>
+		</section>
 
-		<div class="button__dots">
-			<div class="button__dot button__dot1"></div>
-			<div class="button__dot button__dot2"></div>
-			<div class="button__dot button__dot3"></div>
-			<div class="button__dot button__dot4"></div>
-		</div>
-	</section>
-
-	<section class="short__info">
-		<div class="wrap">
-			<div class="short__text-block">
-				<h3 class="short__title">Коротко о <span class="short__h">Техно</span><span
+		<section class="news">
+			<div class="wrap">
+				<h3 class="short__title news__title">Новости <span class="short__h">Техно</span><span
 						class="short__green">Плюс</span></h3>
-				<p class="short__text">Крупнейший производитель тарного картона и один из лидеров по производству
-					целлюлозы в России.</p>
-				<p class="short__text">Осуществляем масштабную программу технического перевооружения, нацеленную на
-					повышение объема выпуска продукции, улучшение ее качества и снижение воздействия на окружающую
-					среду.</p>
+				<ul class="news__list">
 
-				<a href="#" class="social__button button short__button">Узнать больше</a>
-			</div>
+					<li class="news__item">
+						<div class="news__item--img" style="background-image: url('img/news/news_img1.jpg');"></div>
 
-			<div class="short__img">
-				<div class="short__img--big" style="background-image: url('img/short_img1.jpg')" ;>
-					<img class="short__img--big--uzor" src="img/short_uzor.png" alt="">
-				</div>
-
-				<img src="img/short_cvetok.png" alt="" class="short__img--cvetok">
-			</div>
-		</div>
-
-		<div class="line__bottom"></div>
-	</section>
-
-	<section class="productions">
-		<div class="wrap">
-			<h2 class="productions__title">Наша продукция</h2>
-
-
-			<div class="productions__slider--line">
-				<div class="productions__slider">
-					<div class="productions__slider--content">
-						<div class="productions__slider--item-wrapper">
-							<div class="productions__slider--item"
-								style="background-image: url('img/productions_img1.jpg');">
-								<img class="slider__shadow" src="img/slider_shadow.png" alt="">
-
-								<h3 class="productions__slider--title">Пиломатериалы</h3>
-								<p class="productions__slider--text">Производство пиломатериалов различной комплактации
-								</p>
-
-								<div class="productions__slider--arrow"></div>
-							</div>
-							<div class="productions__slider--item"
-								style="background-image: url('img/productions_img2.jpg');">
-								<img class="slider__shadow" src="img/slider_shadow.png" alt="">
-
-								<h3 class="productions__slider--title">Уголь</h3>
-								<p class="productions__slider--text">Производство угля</p>
-
-								<div class="productions__slider--arrow"></div>
-							</div>
+						<div class="news__item--text">
+							<div class="news__item--data">6 июня 2019</div>
+							<div class="news__item--text-info">ТехноПлюс вошел в топ-100 лучших компаний России в сфере
+								корпоративных коммуникациях и корпоративных отношений</div>
 						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="productions__dots">
-				<div class="productions__dots--left"></div>
-				<div class="productions__dot productions__dot1"></div>
-				<div class="productions__dot productions__dot2"></div>
-				<div class="productions__dot productions__dot3"></div>
-				<div class="productions__dot productions__dot4"></div>
-				<div class="productions__dots--right"></div>
-			</div>
-		</div>
-		<div class="line__bottom"></div>
-	</section>
-
-	<section class="advantages">
-		<div class="wrap">
-			<ul class="advantages__list">
-				<li class="advantages__item">
-					<div class="advantages__item--img advantages__item--img1"
-						style="background-image: url(img/advantages/img1.png);"></div>
-
-					<h4 class="advantages__item--title">Бережное отношение к ресурсам</h4>
-					<p class="advantages__text">Срубив старое дерево - Мы высаживаем росток молодого дерева</p>
-				</li>
-				<li class="advantages__item">
-					<div class="advantages__item--img advantages__item--img2"
-						style="background-image: url(img/advantages/img2.png);"></div>
-
-					<h4 class="advantages__item--title">Безотходное производство</h4>
-					<p class="advantages__text">Мы минимизировали отходы от производства, применяя их повторно</p>
-				</li>
-				<li class="advantages__item">
-					<div class="advantages__item--img advantages__item--img3"
-						style="background-image: url(img/advantages/img3.png);"></div>
-
-					<h4 class="advantages__item--title">Отдалённое производство</h4>
-					<p class="advantages__text">Наши заводы и фабрики сильно отдалены от населенных пунктов</p>
-				</li>
-				<li class="advantages__item">
-					<div class="advantages__item--img advantages__item--img4"
-						style="background-image: url(img/advantages/img4.png);"></div>
-
-					<h4 class="advantages__item--title">Производство гумуса и удобрений</h4>
-					<p class="advantages__text">Из вторичных отходов Мы производим гумус для удобрения почвы</p>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-	<section class="map" style="background-image: url('img/map_bg.jpg');">
-		<div class="wrap">
-			<div class="map_img">
-				<img src="img/map_img.png" alt="">
-			</div>
-
-			<div class="map_info">
-				<h2 class="map_info--title">Карта угодий</h2>
-
-				<p class="map_info--text">Список наименований областей, представленный через запятую, в данном случае,
-					это семь выделенных, булавкой областей на карте</p>
-
-
-				<div class="map__slider">
-					<div class="map__slider--content-wrapper">
-						<div class="map__slider--content">
-							<div class="map__slider--item">
-								<img src="img/map_slider_img1.jpg" alt="">
-							</div>
-							<div class="map__slider--item">
-								<img src="img/map_slider_img2.jpg" alt="">
-							</div>
-							<div class="map__slider--item">
-								<img src="img/map_slider_img1.jpg" alt="">
-							</div>
+						<a href="#" class="news_link"></a>
+					</li>
+					<li class="news__item news__item--right">
+						<div class="news__item--text">
+							<div class="news__item--data">6 июня 2019</div>
+							<div class="news__item--text-info">ТехноПлюс вошел в топ-100 лучших компаний России в сфере
+								корпоративных коммуникациях и корпоративных отношений</div>
 						</div>
-						<img src="img/map_slider_shadow.png" alt="" class="map_slider_shadow">
-					</div>
+						<div class="news__item--img" style="background-image: url('img/news/news_img2.png');"></div>
+						<a href="#" class="news_link"></a>
+					</li>
+					<li class="news__item">
+						<div class="news__item--img" style="background-image: url('img/news/news_img3.jpg');"></div>
 
-					<div class="map__slider__buttons">
-						<div class="map__slider__buttons--left"></div>
-						<div class="map__slider__buttons--right"></div>
-					</div>
+						<div class="news__item--text">
+							<div class="news__item--data">6 июня 2019</div>
+							<div class="news__item--text-info">В День эколога ТехноПлюс выпустил в р. Солза в
+								добровольном порядке 2019 штук молоди семги</div>
+						</div>
+						<a href="#" class="news_link"></a>
+					</li>
+					<li class="news__item">
+						<div class="news__item--img" style="background-image: url('img/news/news_img4.jpg');"></div>
+
+						<div class="news__item--text">
+							<div class="news__item--data">6 июня 2019</div>
+							<div class="news__item--text-info">Современные технологии производства ТехноПлюс позволят
+								сделать воздух чище</div>
+						</div>
+						<a href="#" class="news_link"></a>
+					</li>
+				</ul>
+
+				<a href="#" class="button news_button">Все новости</a>
+
+
+			</div>
+		</section>
+
+		<section class="footer">
+			<div class="wrap">
+				<div class="footer__logo">
+					<img src="img/logo-footer.svg" alt="" class="logo--img">
+					<p class="logo--text">©2019 ТехноПлюс. <br> Все права защищены.</p>
+				</div>
+
+				<div class="footer__contacts">
+					<h4 class="contacts__title footer__title">Контакты</h4>
+					<p class="footer__text contacts__item contacts__item--address">г. Малоярославец, ул. Пушкина 99,
+						офис 2
+					</p>
+					<p class="footer__text contacts__item contacts__item--phone"><a href="tel: +79656091111">+7 965 609
+							11
+							11</a>, <a href="tel:+79652903111">+7 965 290 31 11</a></p>
+					<p class="footer__text contacts__item contacts__item--mail"><a
+							href="mailto:info@tehnoplus.ru">info@tehnoplus.ru</a></p>
+				</div>
+
+				<div class="footer__social">
+					<h4 class="social__title footer__title">Мы в соцсетях</h4>
+					<a href="#" class="social__icon social__icon--fb"></a>
+					<a href="#" class="social__icon social__icon--vk"></a>
+					<a href="#" class="social__icon social__icon--ok"></a>
+					<a href="#" class="social__icon social__icon--inst"></a>
+
+					<p class="social__text">Если у вас возникли вопросы, можете задать их нам в любое время:</p>
+
+					<a href="#" class="social__button button">Задать вопрос</a>
+				</div>
+
+				<div class="footer__delivery">
+					<h4 class="delivery__title footer__title">Доставка</h4>
+					<p class="footer__text delivery__text">Какой-либо сео-текст о доставке или регионах работы
+						организации.
+						Какой-либо сео-текст о доставке или регионах работы организации.</p>
 				</div>
 			</div>
-		</div>
-	</section>
-
-	<section class="news">
-		<div class="wrap">
-			<h3 class="short__title news__title">Новости <span class="short__h">Техно</span><span class="short__green">Плюс</span></h3>
-			<ul class="news__list">
-
-				<li class="news__item">
-					<div class="news__item--img" style="background-image: url('img/news/news_img1.jpg');"></div>
-
-					<div class="news__item--text">
-						<div class="news__item--data">6 июня 2019</div>
-						<div class="news__item--text-info">ТехноПлюс вошел в топ-100 лучших компаний России в сфере корпоративных коммуникациях и корпоративных отношений</div>
-					</div>
-					<a href="#" class="news_link"></a>
-				</li>
-				<li class="news__item news__item--right">
-					<div class="news__item--text">
-						<div class="news__item--data">6 июня 2019</div>
-						<div class="news__item--text-info">ТехноПлюс вошел в топ-100 лучших компаний России в сфере корпоративных коммуникациях и корпоративных отношений</div>
-					</div>
-					<div class="news__item--img" style="background-image: url('img/news/news_img2.png');"></div>
-					<a href="#" class="news_link"></a>
-				</li>
-				<li class="news__item">
-					<div class="news__item--img" style="background-image: url('img/news/news_img3.jpg');"></div>
-
-					<div class="news__item--text">
-						<div class="news__item--data">6 июня 2019</div>
-						<div class="news__item--text-info">В День эколога ТехноПлюс выпустил в р. Солза в добровольном порядке 2019 штук молоди семги</div>
-					</div>
-					<a href="#" class="news_link"></a>
-				</li>
-				<li class="news__item">
-					<div class="news__item--img" style="background-image: url('img/news/news_img4.jpg');"></div>
-
-					<div class="news__item--text">
-						<div class="news__item--data">6 июня 2019</div>
-						<div class="news__item--text-info">Современные технологии производства ТехноПлюс позволят сделать воздух чище</div>
-					</div>
-					<a href="#" class="news_link"></a>
-				</li>
-			</ul>
-
-			<a href="#" class="button news_button">Все новости</a>
-			
-
-		</div>
-	</section>
-
-	<section class="footer">
-		<div class="wrap">
-			<div class="footer__logo">
-				<img src="img/logo-footer.svg" alt="" class="logo--img">
-				<p class="logo--text">©2019 ТехноПлюс. Все права защищены.</p>
-			</div>
-
-			<div class="footer__contacts">
-				<h4 class="contacts__title footer__title">Контакты</h4>
-				<p class="footer__text contacts__item contacts__item--address">г. Малоярославец, ул. Пушкина 99, офис 2
-				</p>
-				<p class="footer__text contacts__item contacts__item--phone"><a href="tel: +79656091111">+7 965 609 11
-						11</a>, <a href="tel:+79652903111">+7 965 290 31 11</a></p>
-				<p class="footer__text contacts__item contacts__item--mail"><a
-						href="mailto:info@tehnoplus.ru">info@tehnoplus.ru</a></p>
-			</div>
-
-			<div class="footer__social">
-				<h4 class="social__title footer__title">Мы в соцсетях</h4>
-				<a href="#" class="social__icon social__icon--fb"></a>
-				<a href="#" class="social__icon social__icon--vk"></a>
-				<a href="#" class="social__icon social__icon--ok"></a>
-				<a href="#" class="social__icon social__icon--inst"></a>
-
-				<p class="social__text">Если у вас возникли вопросы, можете задать их нам в любое время:</p>
-
-				<a href="#" class="social__button button">Задать вопрос</a>
-			</div>
-
-			<div class="footer__delivery">
-				<h4 class="delivery__title footer__title">Доставка</h4>
-				<p class="footer__text delivery__text">Какой-либо сео-текст о доставке или регионах работы организации.
-					Какой-либо сео-текст о доставке или регионах работы организации.</p>
-			</div>
-		</div>
-	</section>
-
-
+		</section>
 
 
 	<script src="js/jquery-3.2.1.min.js"></script>
