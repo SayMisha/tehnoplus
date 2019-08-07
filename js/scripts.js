@@ -171,10 +171,7 @@ window.onload = function () {
     });
 
 
-    $('.menu__language--button').on('click', function (e) {
-        e.preventDefault();
-        $('.language__list').slideToggle(300);
-    })
+
     $('.top__search--desktop').on('click', function () {
         $('input[id="search"]').toggleClass('show-search');
     });
@@ -219,6 +216,58 @@ window.onload = function () {
         $('.calc_info').html(score);
 
     });
+
+
+    var inputs = document.querySelectorAll('.inputfile');
+Array.prototype.forEach.call(inputs,function(input)
+{
+	var label	 = input.nextElementSibling,
+	labelVal = label.innerHTML;
+	input.addEventListener('change', function(e)
+	{
+		var fileName = '';
+		if(this.files && this.files.length > 1)
+			fileName = ( this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+		else
+			fileName = e.target.value.split( '\\' ).pop();
+		if( fileName )
+			label.querySelector('span').innerHTML = fileName;
+		else
+			label.innerHTML = labelVal;
+	});
+});
+
+function backToTop() {
+	// Нашли кнопку
+	let button = $('.button_up');
+	// Следим за скролом window
+	$(window).on('scroll', function() {
+		// Если скрол виндоу больше 600, тогда появляется кнопка, если меньше - убираем
+		if($(this).scrollTop() >= 600) {
+			button.slideDown(400);
+		} else {
+			button.fadeOut(400);
+		}
+	})
+	// По клику на кнопку отменяем стандартное событие и переносимся на верх
+	button.on('click', function(e) {
+		e.preventDefault();
+		$('html').animate({scrollTop: 0}, 700);
+	})
+}
+backToTop();
+
+
+
+
+
+
+
+// $('.menu__language--button').on('click', function (e) {
+//     e.preventDefault();
+//     $('.language__list').slideToggle(200);
+// })
+
 
 
 

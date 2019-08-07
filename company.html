@@ -11,71 +11,81 @@
 </head>
 
 <body>
-		<div class="wrapper__top">
-				<section class="top">
-					<div class="wrap wrap_top">
-						<img src="img/logo.svg" alt="Логотип" class="top__logo">
-						<span class="logo__line"></span>
-						<img src="img/small-logo.png" alt="Маленький логотип" class="top__img">
-		
-						<div class="top__nomber top__nomber--desktop">
-							<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
-							<p class="top__nomber--city">г. Малоярославец</p>
+	<div class="wrapper__top">
+		<section class="top">
+			<div class="wrap wrap_top">
+				<img src="img/logo.svg" alt="Логотип" class="top__logo">
+				<span class="logo__line"></span>
+				<img src="img/small-logo.png" alt="Маленький логотип" class="top__img">
+
+				<div class="top__nomber top__nomber--desktop">
+					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
+					<p class="top__nomber--city">г. Малоярославец</p>
+				</div>
+
+				<a class="top__search top__search--desktop" href="search.html"></a>
+			</div>
+		</section>
+
+		<section class="menu">
+			<div class="wrap">
+				<div class="menu_button">
+					<input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+					<label for="checkbox1">
+						<div class="hamburger hamburger1">
+							<span class="bar bar1"></span>
+							<span class="bar bar2"></span>
+							<span class="bar bar3"></span>
+							<span class="bar bar4"></span>
 						</div>
-		
-						<button class="top__search top__search--desktop"></button>
-					</div>
-				</section>
-		
-				<section class="menu">
-					<div class="wrap">
-						<div class="menu_button">
-							<input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
-							<label for="checkbox1">
-								<div class="hamburger hamburger1">
-									<span class="bar bar1"></span>
-									<span class="bar bar2"></span>
-									<span class="bar bar3"></span>
-									<span class="bar bar4"></span>
-								</div>
-							</label>
-						</div>
-						<img src="img/decor.svg" alt="decor" class="menu__img">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="index.html">Главная</a>
-							</li>
-							<li class="menu__item menu__item--products--off menu__item--product">
-								<a href="products.html">Продукция</a>
-							</li>
-							<li class="menu__item">
-								<a href="#">Сотрудничество</a>
-							</li>
-							<li class="menu__item menu__item--active">
-								<a href="company.html">О компании</a>
-							</li>
-							<li class="menu__item">
-								<a href="contacts.html">Контакты</a>
-							</li>
+					</label>
+				</div>
+				<img src="img/decor.svg" alt="decor" class="menu__img">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="index.html">Главная</a>
+					</li>
+					<li class="menu__item menu__item--products--off menu__item--product product_toggle">
+						<a href="company.html">Продукция</a>
+						<ul class="product_toggle__list">
+							<li><a href="404.html">Пиломатериалы</a></li>
+							<li><a href="404.html">Уголь</a></li>
 						</ul>
-		
-						<div class="menu__language">
-							<button class="menu__language--button">Рус</button>
+					</li>
+					<li class="menu__item">
+						<a href="сooperation.html">Сотрудничество</a>
+					</li>
+					<li
+						class="menu__item menu__item--active menu__item--products--off menu__item--product company_toggle">
+						<a href="company.html">О компании</a>
+						<ul class="company_toggle__list">
+							<li><a href="vacancies.html">Вакансии</a></li>
+							<li><a href="news.html">Новости</a></li>
+						</ul>
+					</li>
+					<li class="menu__item">
+						<a href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+
+				<div class="menu__language">
+					<ul class="menu__language--button">Рус
+						<li>
 							<ul class="language__list">
 								<li class="language__item"><a href="#">Рус</a></li>
 								<li class="language__item"><a href="#">Eng</a></li>
 							</ul>
-						</div>
-						<div class="top__nomber top__nomber--mobile">
-								<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
-								<p class="top__nomber--city">г. Малоярославец</p>
-							</div>
-							<button class="top__search top__search--mobile"></button>
-					</div>
-				</section>
+						</li>
+					</ul>
+				</div>
+				<div class="top__nomber top__nomber--mobile">
+					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
+					<p class="top__nomber--city">г. Малоярославец</p>
+				</div>
+				<a href="search.html" class="top__search top__search--mobile"></a>
 			</div>
-		
-
+		</section>
+	</div>
 	<section class="broadcrumbs">
 		<div class="wrap">
 			<ul>
@@ -91,22 +101,70 @@
 
 			<div class="company_img" style="background-image: url(img/company_img.jpg);"></div>
 			<div class="company_text">
-				<h3 class="short__title news__title company_text--title"><span class="short__h">Техно</span><span class="short__green">Плюс</span> - это</h3>
+				<h3 class="short__title news__title company_text--title"><span class="short__h">Техно</span><span
+						class="short__green">Плюс </span>- это</h3>
+				<p class="company_text--p">Эксперт в области лесозаготовки с 2009 года. Основная деятельность компании -
+					оптовые поставки древесины и заготовка лесоматериалов.</p>
 
-				<p class="company_text--p">Крупнейший производитель тарного картона и один из лидеров по производству целлюлозы в России.
+				<p class="company_text--p">Техноплюс ведет заготовку древесины в самом сердце богатых лесных массивов
+					Среднерусской возвышенности. Объемы заготовки достигают 150 000 м/куб. в год, площадь разработки
+					более 43000 гектаров лесных угодий.</p>
+
+				<p class="company_text--p">Для поддержания качества заготовленной древесины и круглогодичных ритмичных
+					поставок компания располагает промежуточными складами.</p>
+
+				<p class="company_text--p">Лес - это бесценное богатство нашей Родины. Залог здоровья планеты и будущих
+					поколений. Понимая всю важность, и возлагая на себя всю ответственность, основная миссия компании на
+					сегодня - это воспроизводство лесов.</p>
+
+				<p class="company_text--p">Заботясь о качестве леса Техноплюс проводит посадку новых деревьев взамен
+					вырубленных или больных в равной пропорции. Кроме того компания активно принимает участие в других
+					экологических акциях по спасению и сохранению деревьев.</p>
+
+				<p class="company_text--p">Компания Техноплюс является обладателем международного сертификата
+					лесоуправления PEFC, и реализует только качественную продукцию, в соответствии с сертификатом PEFC.
 				</p>
-				<p class="company_text--p">Осуществляем масштабную программу технического перевооружения, нацеленную на повышение объема выпуска продукции, улучшение ее качества и снижение воздействия на окружающую среду.</p>
-				<p class="company_text--p">Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации существенных финансовых и административных условий: </p>
 
+				<p class="company_text--p">Техноплюс приглашает к сотрудничеству все заинтересованные компании, и
+					гарантирует только качественную продукцию и лучшие условия сотрудничества.</p>
+
+
+				<h4 class="company__title--info">Преимущества сотрудничества</h4>
 				<ul class="company__list">
-					<li class="company__item">Идейные соображения высшего порядка</li>
-					<li class="company__item">А также постоянный количественный </li>
-					<li class="company__item">Рост и сфера нашей активности позволяет оценить значение позиций</li>
-					<li class="company__item">Занимаемых участниками в отношении поставленных задач.</li>
+					<li class="company__item">свыше 43000 гектаров леса в долгосрочной аренде. гибкие системы поставок
+						от небольших объемов до крупного опта</li>
+					<li class="company__item">только древесина заготовленная по принципам международных стандартов.
+						компания “Техноплюс” - обладатель международного сертификата лесоуправления PEFС</li>
+					<li class="company__item">наличие складов промежуточного хранения дают возможность круглогодичных
+						ритмичных поставок</li>
+					<li class="company__item">удобное логистическое расположение. г. Малоярославец 120 км. от Москвы.
+					</li>
+					<li class="company__item">специальные условия сотрудничества для каждого клиента</li>
+					<li class="company__item">собственный парк техники, в том числе по вывозке древесины покупателю</li>
 				</ul>
 			</div>
 
 			<div class="company_info--big-text">Природа удивительно прекрасна, люби ее и не губи напрасно!</div>
+
+			<ul class="company__stat">
+				<li class="company__stat--item">
+					<p class="company__stat--big-text">150</p>
+					<p class="company__stat--text">Более 150 Га арендуемых угодий</p>
+				</li>
+				<li class="company__stat--item">
+					<p class="company__stat--big-text">10<span class="company__stat--big-text--right">лет</span></p>
+					<p class="company__stat--text">Более 10-ти лет на рынке</p>
+				</li>
+				<li class="company__stat--item">
+					<p class="company__stat--big-text">43<span class="company__stat--big-text--right">тыс.</span></p>
+					<p class="company__stat--text">Более 43 тыс. ₽ средняя зарплата сотрудников</p>
+				</li>
+				<li class="company__stat--item">
+					<p class="company__stat--big-text stat-img--primerno">50<span
+							class="company__stat--big-text--right">чел.</span></p>
+					<p class="company__stat--text">Около 50-ти человек в штате компании</p>
+				</li>
+			</ul>
 		</div>
 		<div class="line__bottom"></div>
 	</section>
@@ -257,7 +315,7 @@
 
 
 
-
+	<button class="button_up" type="button"></button>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>

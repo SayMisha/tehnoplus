@@ -23,54 +23,65 @@
 					<p class="top__nomber--city">г. Малоярославец</p>
 				</div>
 
-				<button class="top__search top__search--desktop"></button>
+				<a class="top__search top__search--desktop" href="search.html"></a>
 			</div>
 		</section>
 
 		<section class="menu">
 			<div class="wrap">
 				<div class="menu_button">
-                    <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
-                    <label for="checkbox1">
-                        <div class="hamburger hamburger1">
-                            <span class="bar bar1"></span>
-                            <span class="bar bar2"></span>
-                            <span class="bar bar3"></span>
-                            <span class="bar bar4"></span>
-                        </div>
-                    </label>
-                </div>
+					<input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+					<label for="checkbox1">
+						<div class="hamburger hamburger1">
+							<span class="bar bar1"></span>
+							<span class="bar bar2"></span>
+							<span class="bar bar3"></span>
+							<span class="bar bar4"></span>
+						</div>
+					</label>
+				</div>
 				<img src="img/decor.svg" alt="decor" class="menu__img">
 				<ul class="menu__list">
 					<li class="menu__item">
 						<a href="index.html">Главная</a>
 					</li>
-					<li class="menu__item menu__item--products--off menu__item--product">
-						<a href="products.html">Продукция</a>
+					<li class="menu__item menu__item--products--off menu__item--product product_toggle">
+						<a href="company.html">Продукция</a>
+						<ul class="product_toggle__list">
+							<li><a href="404.html">Пиломатериалы</a></li>
+							<li><a href="404.html">Уголь</a></li>
+						</ul>
 					</li>
 					<li class="menu__item">
-						<a href="#">Сотрудничество</a>
+						<a href="сooperation.html">Сотрудничество</a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item menu__item--products--off menu__item--product company_toggle">
 						<a href="company.html">О компании</a>
+						<ul class="company_toggle__list">
+							<li><a href="vacancies.html">Вакансии</a></li>
+							<li><a href="news.html">Новости</a></li>
+						</ul>
 					</li>
-					<li class="menu__item menu__item--active">
+					<li class="menu__item">
 						<a href="contacts.html">Контакты</a>
 					</li>
 				</ul>
 
 				<div class="menu__language">
-					<button class="menu__language--button">Рус</button>
-					<ul class="language__list">
-						<li class="language__item"><a href="#">Рус</a></li>
-						<li class="language__item"><a href="#">Eng</a></li>
+					<ul class="menu__language--button">Рус
+						<li>
+							<ul class="language__list">
+								<li class="language__item"><a href="#">Рус</a></li>
+								<li class="language__item"><a href="#">Eng</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				<div class="top__nomber top__nomber--mobile">
-						<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
-						<p class="top__nomber--city">г. Малоярославец</p>
-					</div>
-					<button class="top__search top__search--mobile"></button>
+					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
+					<p class="top__nomber--city">г. Малоярославец</p>
+				</div>
+				<a href="search.html" class="top__search top__search--mobile"></a>
 			</div>
 		</section>
 	</div>
@@ -79,65 +90,391 @@
 		<div class="wrap">
 			<ul>
 				<li><a href="index.html">Главная</a></li>
-				<li><a>Контакты</a></li>
+				<li><a href="company.html">О компании</a></li>
+				<li><a>Вакансии</a></li>
 			</ul>
 		</div>
 	</section>
 
-	<section class="contacts_info">
-	<div class="wrap">
-		<h1 class="contacts__title_h1">Контактная информация</h1>
-
-		<ul class="contacts_info__list">
-			<li class="contacts_info__item">
-				<h3 class="contacns_info__item--title">Адрес в Малоярославце</h3>
-				<ul class="contacts-address__list">
-					<li class="contacts-address__item contacts-address__item--address">Адрес: 	249090, г. Малоярославец,  ул. Подольских Курсантов, д. 19</li>
-					<li class="contacts-address__item contacts-address__item--phone">+7 (48431) 2-15-72</li>
-					<li class="contacts-address__item contacts-address__item--mail">info@techno-plus.org</li>
-				</ul>
-				<a href="#" class="button contacts__button contacts__button__map">Показать на карте</a>
-			</li>
-			<li class="contacts_info__item">
-				<h3 class="contacns_info__item--title">Адрес в Мятлево</h3>
-				<ul class="contacts-address__list">
-						<li class="contacts-address__item contacts-address__item--address">Адрес: 	249090, г. Малоярославец,  ул. Подольских Курсантов, д. 19</li>
-						<li class="contacts-address__item contacts-address__item--phone">+7 (48431) 2-15-72</li>
-						<li class="contacts-address__item contacts-address__item--mail">info@techno-plus.org</li>
-				</ul>
-				<a href="#" class="button contacts__button contacts__button__map">Показать на карте</a>
-			</li>
-			<li class="contacts_info__item">
-				<h3 class="contacns_info__item--title">Реквизиты компании</h3>
-				<p class="contacts_info__item--text">ООО «ТехноПлюс»</p>
+	<section class="vacancies">
+		<div class="wrap">
+			<h1 class="contacts__title_h1 vacancies__title_h1">Вакансии</h1>
+			<div class="vacancies__text--block">
+				<p class="vacancies__text">В данном разделе опубликованы актуальные вакансии компании “Техноплюс”.</p>
+				<p class="vacancies__text">Если Вы заинтересованы в дальнейшем трудоустройстве в компанию “Техноплюс”,
+					присылайте свои резюме на нашу электронную почту: <a href="#">mail@mail.ru</a>.</p>
+				<p class="vacancies__text">Мы обязательно ознакомимся с Вашим резюме, и в случае появления новых
+					вакансий обязательно свяжемся с Вами.</p>
+			</div>
 
 
-				<ul class="contacts__requisites__list">
-					<li class="contacts__requisites">
-						<span>ИНН/КПП:</span> 4011021017/401101001
-					</li>
-					<li class="contacts__requisites">
-						<span>ОГРН:</span> 1094011000500
-					</li>
-					<li class="contacts__requisites">
-						<span>ОКПО:</span> 89701764
-					</li>
-					<li class="contacts__requisites">
-						<span>Директор:</span> Семенова Марина Валериевна
-					</li>
-				</ul>
-				<a href="#" class="button contacts__button contacts__button__card">Карточка организации</a>
-			</li>
-		</ul>
-		
+			<ul class="vacancies__list--link">
+				<li class="vacancies__item--link"><a href="#">Ведущий менеджер по продажам/руководитель отдела</a></li>
+				<li class="vacancies__item--link"><a href="#">Водитель лесовоза с манипулятором</a></li>
+				<li class="vacancies__item--link"><a href="#">Механик</a></li>
+				<li class="vacancies__item--link"><a href="#">Тракторист МТЗ</a></li>
+			</ul>
 
-	</div>
+			<ul class="vacancies__list">
+				<li class="vacancies__item">
+					<div class="vacancies__title--wrapper">
+						<h2 class="vacancies__item--title">Ведущий менеджер по продажам/руководитель отдела</h2>
+						<p class="vacancies__item--price">от 45 000 ₽/мес.</p>
+					</div>
+					<ul class="requirements__list">
+						<li class="requirements__item requirements__item--img requirements__item--img1">Полная
+							занятость, полный день</li>
+						<li class="requirements__item requirements__item--img requirements__item--img2">Требуемый опыт
+							работы: 3–6 лет</li>
+						<li class="requirements__item">Итоговая З/П определяется после собеседования</li>
+					</ul>
+
+
+					<ul class="vacancies__charge-list">
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Обязанности:</h4>
+
+							<p class="vacancies__charge--text">Организация коммерческого отдела;</p>
+							<p class="vacancies__charge--text">Комплексный анализ рынков, конкурентов, продуктов,
+								потенциальных клиентов и потребителей;</p>
+							<p class="vacancies__charge--text">Прогнозирование / планирование продаж;
+							</p>
+							<p class="vacancies__charge--text">Разработка и реализация стратегии продвижения и продаж;
+							</p>
+							<p class="vacancies__charge--text">Управление ассортиментом и ценообразованием;
+							</p>
+							<p class="vacancies__charge--text">Реклама, маркетинг, организация мероприятий, выставок;
+							</p>
+							<p class="vacancies__charge--text">Развитие каналов продаж;
+							</p>
+							<p class="vacancies__charge--text">Поиск новых клиентов, удержание существующих;
+							</p>
+							<p class="vacancies__charge--text">Выстраивание работы на зарубежных рынках.</p>
+						</li>
+
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Требования:</h4>
+							<p class="vacancies__charge--text">Высшее образование (экономическое и/или техническое);</p>
+							<p class="vacancies__charge--text">Опыт работы в области продаж, продвижения и управления
+								продуктами (деревопереработки) не менее 4-х лет;</p>
+							<p class="vacancies__charge--text">Организаторские способности, ориентация на результат,
+								инициативность,
+								самоконтроль;</p>
+							<p class="vacancies__charge--text">Сильные аналитические способности, многозадачность,
+								готовность
+								работать в условиях ограниченных ресурсов и сверхурочно;</p>
+							<p class="vacancies__charge--text">Умение работать в команде, коммуникабельность;</p>
+							<p class="vacancies__charge--text">Готовность к командировкам (в т.ч. зарубежным);</p>
+							<p class="vacancies__charge--text">Опытный пользователь ПК (офисные программы MS Excel,
+								Word),
+								специализированный программы 1С.</p>
+							<p class="vacancies__charge--text">Желательно знание английского языка на уровне
+								intermediate (могу писать,
+								говорить).</p>
+						</li>
+
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Условия:</h4>
+
+							<p class="vacancies__charge--text">Официальное трудоустройство.</p>
+							<p class="vacancies__charge--text">Полная занятость, полный день.</p>
+							<p class="vacancies__charge--text">Заработная плата/премии определяется по результатам
+								собеседования;</p>
+							<p class="vacancies__charge--text">Профессиональное и личностное развитие.</p>
+
+							<ul class="vacancies__contacts--list">
+								<h4 class="vacancies__charge--title">Контактное лицо:</h4>
+								<li class="vacancies__contacts--item contacts__img contacts__img1">Сазонова Ольга</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img2">+7 (48431) 21572</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img3"><a
+										href="mailto:">tehnoplusooo@mail.ru<a>
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img4"><a href="#">г.
+										Малоярославец, ул. Подольских Курсантов, д. 19</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<form action="post" class="vacancies__form">
+				<div class="vacancies__input--phone--wrapper">
+					<p class="vacancies__input--phone--title">Введите ваш номер телефона</p>
+					<input type="text" class="vacancies__input--phone" placeholder="+7 (XXX) XXX XX XX">
+				</div>
+
+				<div class="file-upload">
+					<p class="vacancies__input--phone--title">Прикрепите ваше резюме</p>
+					<input type="file" name="file" id="upload" class="inputfile hide"
+						data-multiple-caption="{count} files selected" multiple />
+					<label for="upload"><span>Прикрепить файл</span></label>
+				</div>
+
+
+				<a href="#" class="button vacancies__button">Откликнуться на вакансию</a>
+			</form>
+			<div class="vacancies__line"></div>
+
+
+
+			<ul class="vacancies__list">
+				<li class="vacancies__item">
+					<div class="vacancies__title--wrapper">
+						<h2 class="vacancies__item--title">Водитель лесовоза с манипулятором</h2>
+						<p class="vacancies__item--price">до 30 000 ₽/мес.</p>
+					</div>
+					<ul class="requirements__list">
+						<li class="requirements__item requirements__item--img requirements__item--img1">Полная
+							занятость, полный день</li>
+						<li class="requirements__item requirements__item--img requirements__item--img2">Требуемый опыт
+							работы: 3–6 лет</li>
+						<li class="requirements__item">Итоговая З/П определяется после собеседования</li>
+					</ul>
+
+
+					<ul class="vacancies__charge-list">
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Обязанности:</h4>
+
+							<p class="vacancies__charge--text">Перевозка древесины;</p>
+							<p class="vacancies__charge--text">Обслуживание автомобиля.</p>
+						</li>
+
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Требования:</h4>
+							<p class="vacancies__charge--text">Права категории В, С, Е наличие личной карты водителя —
+								обязательно;</p>
+							<p class="vacancies__charge--text">Опыт работы не менее 3-х лет;</p>
+							<p class="vacancies__charge--text">Дисциплинированность;</p>
+							<p class="vacancies__charge--text">Ответственность;</p>
+							<p class="vacancies__charge--text">Исполнительность.</p>
+						</li>
+
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Условия:</h4>
+
+							<p class="vacancies__charge--text">Постоянная, полный рабочий день, работа на территории
+								работодателя;</p>
+							<p class="vacancies__charge--text">Оформление, отпуск, больничный и пр. по ТК;</p>
+							<p class="vacancies__charge--text">Зарплата по результатам собеседования.</p>
+							<ul class="vacancies__contacts--list">
+								<h4 class="vacancies__charge--title">Контактное лицо:</h4>
+								<li class="vacancies__contacts--item contacts__img contacts__img1">Гайдай Алексей</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img2">+7 (965) 700-03-05
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img2">+7 (48431) 2-15-72
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img3"><a
+										href="mailto:">tehnoplusooo@mail.ru<a>
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img4"><a href="#">г.
+										Малоярославец, ул. Подольских Курсантов, д. 19</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<form action="post" class="vacancies__form">
+				<div class="vacancies__input--phone--wrapper">
+					<p class="vacancies__input--phone--title">Введите ваш номер телефона</p>
+					<input type="text" class="vacancies__input--phone" placeholder="+7 (XXX) XXX XX XX">
+				</div>
+
+				<div class="file-upload">
+					<p class="vacancies__input--phone--title">Прикрепите ваше резюме</p>
+					<input type="file" name="file" id="upload2" class="inputfile hide"
+						data-multiple-caption="{count} files selected" multiple />
+					<label for="upload2"><span>Прикрепить файл</span></label>
+				</div>
+
+
+				<a href="#" class="button vacancies__button">Откликнуться на вакансию</a>
+			</form>
+			<div class="vacancies__line"></div>
+
+
+
+
+			<ul class="vacancies__list">
+				<li class="vacancies__item">
+					<div class="vacancies__title--wrapper">
+						<h2 class="vacancies__item--title">Механик</h2>
+						<p class="vacancies__item--price">до 35 000 ₽/мес.</p>
+					</div>
+					<ul class="requirements__list">
+						<li class="requirements__item requirements__item--img requirements__item--img1">Полная
+							занятость, полный день</li>
+						<li class="requirements__item requirements__item--img requirements__item--img2">Требуемый опыт
+							работы: 3–6 лет</li>
+						<li class="requirements__item">Итоговая З/П определяется после собеседования</li>
+					</ul>
+
+
+					<ul class="vacancies__charge-list">
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Обязанности:</h4>
+
+							<p class="vacancies__charge--text">Вести учет легкового и грузового автомобильного
+								транспорта;</p>
+							<p class="vacancies__charge--text">Контроль состояние автотранспорта и обеспечение его
+								исправности;</p>
+							<p class="vacancies__charge--text">Разрабатывает графики проведения технического
+								обслуживания и ремонта
+								автомобилей.
+							</p>
+						</li>
+
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Требования:</h4>
+							<p class="vacancies__charge--text">Наличие водительского удостоверения категории В и С;</p>
+							<p class="vacancies__charge--text">Опыт работы не менее 3 лет;</p>
+							<p class="vacancies__charge--text">Дисциплинированность;</p>
+							<p class="vacancies__charge--text">Ответственность;</p>
+							<p class="vacancies__charge--text">Исполнительность;</p>
+							<p class="vacancies__charge--text">Высшее техническое (специальное) или
+								средне-профессиональное образование;</p>
+							<p class="vacancies__charge--text">Опыт работы по управлению подразделениями автомобильного
+								транспорта.</p>
+						</li>
+
+
+
+
+
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Условия:</h4>
+
+							<p class="vacancies__charge--text">Постоянная, полный рабочий день, работа на территории
+								работодателя;</p>
+							<p class="vacancies__charge--text">Оформление, отпуск, больничный и пр. по ТК;</p>
+							<p class="vacancies__charge--text">Зарплата по результатам собеседования.</p>
+
+							<ul class="vacancies__contacts--list">
+								<h4 class="vacancies__charge--title">Контактное лицо:</h4>
+								<li class="vacancies__contacts--item contacts__img contacts__img1">Гайдай Алексей</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img2">+7 (965) 700-03-05
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img2">+7 (48431) 2-15-72
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img3"><a
+										href="mailto:">tehnoplusooo@mail.ru<a>
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img4"><a href="#">г.
+										Малоярославец, ул. Подольских Курсантов, д. 19</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<form action="post" class="vacancies__form">
+				<div class="vacancies__input--phone--wrapper">
+					<p class="vacancies__input--phone--title">Введите ваш номер телефона</p>
+					<input type="text" class="vacancies__input--phone" placeholder="+7 (XXX) XXX XX XX">
+				</div>
+
+				<div class="file-upload">
+					<p class="vacancies__input--phone--title">Прикрепите ваше резюме</p>
+					<input type="file" name="file" id="upload3" class="inputfile hide"
+						data-multiple-caption="{count} files selected" multiple />
+					<label for="upload3"><span>Прикрепить файл</span></label>
+				</div>
+
+
+				<a href="#" class="button vacancies__button">Откликнуться на вакансию</a>
+			</form>
+			<div class="vacancies__line"></div>
+
+
+
+
+
+			<ul class="vacancies__list">
+				<li class="vacancies__item">
+					<div class="vacancies__title--wrapper">
+						<h2 class="vacancies__item--title">Тракторист МТЗ</h2>
+						<p class="vacancies__item--price">до 30 000 ₽/мес.</p>
+					</div>
+					<ul class="requirements__list">
+						<li class="requirements__item requirements__item--img requirements__item--img1">Полная
+							занятость, полный день</li>
+						<li class="requirements__item requirements__item--img requirements__item--img2">Требуемый опыт
+							работы: 3–6 лет</li>
+						<li class="requirements__item">Итоговая З/П определяется после собеседования</li>
+					</ul>
+
+					<ul class="vacancies__charge-list">
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Обязанности:</h4>
+
+							<p class="vacancies__charge--text">Транспортировка различных грузов;</p>
+							<p class="vacancies__charge--text">Выполнение работ прицепным и навесным оборудованием;</p>
+							<p class="vacancies__charge--text">Обслуживание трактора.</p>
+						</li>
+
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Требования:</h4>
+							<p class="vacancies__charge--text">Права тракториста, наличие личной карты водителя —
+								обязательно;</p>
+							<p class="vacancies__charge--text">Опыт работы не
+								менее 3 лет;</p>
+							<p class="vacancies__charge--text">Дисциплинированность;</p>
+							<p class="vacancies__charge--text">Ответственность;</p>
+							<p class="vacancies__charge--text">Исполнительность.</p>
+						</li>
+
+						<li class="vacancies__charge-item">
+							<h4 class="vacancies__charge--title">Условия:</h4>
+
+							<p class="vacancies__charge--text">Постоянная, полный рабочий день, работа на территории
+								работодателя;</p>
+							<p class="vacancies__charge--text">Полная занятость, полный день.</p>
+							<p class="vacancies__charge--text">Оформление, отпуск, больничный и пр. по ТК;</p>
+							<p class="vacancies__charge--text">Зарплата по результатам собеседования.</p>
+
+							<ul class="vacancies__contacts--list">
+								<h4 class="vacancies__charge--title">Контактное лицо:</h4>
+								<li class="vacancies__contacts--item contacts__img contacts__img1">Гайдай Алексей</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img2">+7 (965) 700-03-05
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img2">+7 (48431) 2-15-72
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img3"><a
+										href="mailto:">tehnoplusooo@mail.ru<a>
+								</li>
+								<li class="vacancies__contacts--item contacts__img contacts__img4"><a href="#">г.
+										Малоярославец, ул. Подольских Курсантов, д. 19</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<form action="post" class="vacancies__form">
+				<div class="vacancies__input--phone--wrapper">
+					<p class="vacancies__input--phone--title">Введите ваш номер телефона</p>
+					<input type="text" class="vacancies__input--phone" placeholder="+7 (XXX) XXX XX XX">
+				</div>
+
+				<div class="file-upload">
+					<p class="vacancies__input--phone--title">Прикрепите ваше резюме</p>
+					<input type="file" name="file" id="upload4" class="inputfile hide"
+						data-multiple-caption="{count} files selected" multiple />
+					<label for="upload4"><span>Прикрепить файл</span></label>
+				</div>
+
+
+				<a href="#" class="button vacancies__button">Откликнуться на вакансию</a>
+			</form>
+			<div class="vacancies__line"></div>
+		</div>
+
+
+
+
+
 	</section>
-
-	<section class="contacts_map">
-		<img src="img/MAP.jpg" alt="">
-	</section>
-
 
 
 
@@ -180,7 +517,7 @@
 
 
 
-
+	<button class="button_up" type="button"></button>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>

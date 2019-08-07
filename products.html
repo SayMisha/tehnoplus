@@ -22,10 +22,8 @@
 					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
 					<p class="top__nomber--city">г. Малоярославец</p>
 				</div>
-				<div class="search__block">
-					<input id="search" type="text" placeholder="Поиск">
-					<button class="top__search top__search--desktop"></button>
-				</div>
+
+				<a class="top__search top__search--desktop" href="search.html"></a>
 			</div>
 		</section>
 
@@ -47,14 +45,23 @@
 					<li class="menu__item">
 						<a href="index.html">Главная</a>
 					</li>
-					<li class="menu__item menu__item--products--off menu__item--product menu__item--active">
-						<a href="products.html">Продукция</a>
+					<li
+						class="menu__item menu__item--products--off menu__item--active menu__item--product product_toggle">
+						<a href="company.html">Продукция</a>
+						<ul class="product_toggle__list">
+							<li><a href="404.html">Пиломатериалы</a></li>
+							<li><a href="404.html">Уголь</a></li>
+						</ul>
 					</li>
 					<li class="menu__item">
-						<a href="#">Сотрудничество</a>
+						<a href="сooperation.html">Сотрудничество</a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item menu__item--products--off menu__item--product company_toggle">
 						<a href="company.html">О компании</a>
+						<ul class="company_toggle__list">
+							<li><a href="vacancies.html">Вакансии</a></li>
+							<li><a href="news.html">Новости</a></li>
+						</ul>
 					</li>
 					<li class="menu__item">
 						<a href="contacts.html">Контакты</a>
@@ -62,18 +69,20 @@
 				</ul>
 
 				<div class="menu__language">
-					<button class="menu__language--button">Рус</button>
-					<ul class="language__list">
-						<li class="language__item"><a href="#">Рус</a></li>
-						<li class="language__item"><a href="#">Eng</a></li>
+					<ul class="menu__language--button">Рус
+						<li>
+							<ul class="language__list">
+								<li class="language__item"><a href="#">Рус</a></li>
+								<li class="language__item"><a href="#">Eng</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				<div class="top__nomber top__nomber--mobile">
 					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
 					<p class="top__nomber--city">г. Малоярославец</p>
 				</div>
-				<input id="search-mobile" type="text" placeholder="Поиск">
-				<button class="top__search top__search--mobile"></button>
+				<a href="search.html" class="top__search top__search--mobile"></a>
 			</div>
 		</section>
 	</div>
@@ -141,7 +150,8 @@
 						<div class="catalog__table">
 							<div class="catalog__table-row catalog__table-row_title">
 								<div class="catalog__table-cell catalog__table-cell_title">Размер, м</div>
-								<div class="catalog__table-cell catalog__table-cell_title">Цена за куб. метр без НДС</div>
+								<div class="catalog__table-cell catalog__table-cell_title">Цена за куб. метр без НДС
+								</div>
 								<div class="catalog__table-cell catalog__table-cell_title">Цена за куб. метр с НДС
 								</div>
 							</div>
@@ -423,7 +433,7 @@
 
 
 
-
+	<button class="button_up" type="button"></button>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
