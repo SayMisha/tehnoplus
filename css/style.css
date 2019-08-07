@@ -4227,3 +4227,6 @@ input[id="search"].show-search {
         width: 280px;
     }
 }
+.company_toggle__list {
+    border: 1px solid rgba(210, 210, 210, 0.4);
+}
