@@ -22,8 +22,10 @@
 					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
 					<p class="top__nomber--city">г. Малоярославец</p>
 				</div>
-
-				<a class="top__search top__search--desktop" href="search.html"></a>
+				<form action="search.html" class="search__block--desktop">
+					<input type="text" placeholder="Введите ваш запрос и нажмите Enter">
+					<div class="top__search top__search--desktop"></div>
+				</form>
 			</div>
 		</section>
 
@@ -46,7 +48,7 @@
 						<a href="index.html">Главная</a>
 					</li>
 					<li class="menu__item menu__item--products--off menu__item--product product_toggle">
-						<a href="company.html">Продукция</a>
+						<a href="products.html">Продукция</a>
 						<ul class="product_toggle__list">
 							<li><a href="404.html">Пиломатериалы</a></li>
 							<li><a href="404.html">Уголь</a></li>
@@ -82,7 +84,10 @@
 					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
 					<p class="top__nomber--city">г. Малоярославец</p>
 				</div>
-				<a href="search.html" class="top__search top__search--mobile"></a>
+				<form action="search.html" class="top__search--mobile--wrapper">
+					<input type="text" placeholder="Введите запрос">
+					<div class="top__search top__search--mobile"></div>
+				</form>
 			</div>
 		</section>
 	</div>
@@ -230,7 +235,27 @@
 			</div>
 		</div>
 	</section>
+	<div class="modal__call-back">
+		<button class="modal__call-back--close"></button>
 
+		<div class="modal__call-back--text-block">
+			<h2 class="modal__call-back--title">Заголовок формы, не более двух строк</h2>
+
+			<p class="modal__call-back--text">Краткое описание формы с обещаниями, что мы вам перезвоним и т.д. Тоже
+				желательно делать небольшого объёма.</p>
+
+			<form action="404.html" class="modal__call-back--form">
+				<input type="text" placeholder="Введите ваше имя">
+				<input type="text" placeholder="Введите ваш номер телефона">
+				<button type="submit" class="button button__modal">Отправить запрос</button>
+
+				<p class="modal__call-back--text">Нажимая кнопку «Отправить запрос» я принимаю <a href="#">Условия
+						обработки персональных данных</a> и <a href="#">Политику конфиденциальности</a></p>
+			</form>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<div class="overlay_menu"></div>
 	<button class="button_up" type="button"></button>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/scripts.js"></script>

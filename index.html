@@ -22,8 +22,10 @@
 					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
 					<p class="top__nomber--city">г. Малоярославец</p>
 				</div>
-
-				<a class="top__search top__search--desktop" href="search.html"></a>
+				<form action="search.html" class="search__block--desktop">
+					<input type="text" placeholder="Введите ваш запрос и нажмите Enter">
+					<div class="top__search top__search--desktop"></div>
+				</form>
 			</div>
 		</section>
 
@@ -46,7 +48,7 @@
 						<a href="#">Главная</a>
 					</li>
 					<li class="menu__item menu__item--products--off menu__item--product product_toggle">
-						<a href="company.html">Продукция</a>
+						<a href="products.html">Продукция</a>
 						<ul class="product_toggle__list">
 							<li><a href="404.html">Пиломатериалы</a></li>
 							<li><a href="404.html">Уголь</a></li>
@@ -81,7 +83,10 @@
 					<p class="top__nomber--text"><a href="#">8 (48431) 2-15-72</a></p>
 					<p class="top__nomber--city">г. Малоярославец</p>
 				</div>
-				<a href="search.html" class="top__search top__search--mobile"></a>
+				<form action="search.html" class="top__search--mobile--wrapper">
+					<input type="text" placeholder="Введите запрос">
+					<div class="top__search top__search--mobile"></div>
+				</form>
 			</div>
 		</section>
 	</div>
@@ -181,6 +186,7 @@
 								</p>
 
 								<div class="productions__slider--arrow"></div>
+								<a href="404.html" class="productions__slider--item_link"></a>
 							</div>
 							<div class="productions__slider--item"
 								style="background-image: url('img/productions_img2.jpg');">
@@ -190,20 +196,53 @@
 								<p class="productions__slider--text">Производство угля</p>
 
 								<div class="productions__slider--arrow"></div>
+								<a href="404.html" class="productions__slider--item_link"></a>
+							</div>
+						</div>
+
+						<div class="productions__slider--item-wrapper">
+							<div class="productions__slider--item"
+								style="background-image: url('img/productions_img1.jpg');">
+								<img class="slider__shadow" src="img/slider_shadow.png" alt="">
+
+								<h3 class="productions__slider--title">Пиломатериалы</h3>
+								<p class="productions__slider--text">Производство пиломатериалов различной
+									комплактации
+								</p>
+
+								<div class="productions__slider--arrow"></div>
+								<a href="404.html" class="productions__slider--item_link"></a>
+							</div>
+							<div class="productions__slider--item"
+								style="background-image: url('img/productions_img2.jpg');">
+								<img class="slider__shadow" src="img/slider_shadow.png" alt="">
+
+								<h3 class="productions__slider--title">Уголь</h3>
+								<p class="productions__slider--text">Производство угля</p>
+
+								<div class="productions__slider--arrow"></div>
+								<a href="404.html" class="productions__slider--item_link"></a>
 							</div>
 						</div>
 					</div>
+
+
 				</div>
+
+				<div class="line--slider"></div>
 			</div>
 
 			<div class="productions__dots">
 				<div class="productions__dots--left"></div>
-				<div class="productions__dot productions__dot1"></div>
-				<div class="productions__dot productions__dot2"></div>
-				<div class="productions__dot productions__dot3"></div>
-				<div class="productions__dot productions__dot4"></div>
+				<div class="productions__dots-nomber">
+					<!-- <div class="productions__dot productions__active"></div>
+					<div class="productions__dot"></div>
+					<div class="productions__dot"></div>
+					<div class="productions__dot"></div> -->
+				</div>
 				<div class="productions__dots--right"></div>
 			</div>
+
 		</div>
 		<div class="line__bottom"></div>
 	</section>
@@ -373,9 +412,30 @@
 					Какой-либо сео-текст о доставке или регионах работы организации.</p>
 			</div>
 		</div>
+		<button class="button_up" type="button"></button>
 	</section>
 
-	<button class="button_up" type="button"></button>
+	<div class="modal__call-back">
+		<button class="modal__call-back--close"></button>
+
+		<div class="modal__call-back--text-block">
+			<h2 class="modal__call-back--title">Заголовок формы, не более двух строк</h2>
+
+			<p class="modal__call-back--text">Краткое описание формы с обещаниями, что мы вам перезвоним и т.д. Тоже
+				желательно делать небольшого объёма.</p>
+
+			<form action="404.html" class="modal__call-back--form">
+				<input type="text" placeholder="Введите ваше имя">
+				<input type="text" placeholder="Введите ваш номер телефона">
+				<button type="submit" class="button button__modal">Отправить запрос</button>
+
+				<p class="modal__call-back--text">Нажимая кнопку «Отправить запрос» я принимаю <a href="#">Условия
+						обработки персональных данных</a> и <a href="#">Политику конфиденциальности</a></p>
+			</form>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<div class="overlay_menu"></div>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
